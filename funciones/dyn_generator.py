@@ -10,7 +10,7 @@ def dyn_generator(oper, state):
         state (matrix): Segundo argumento. Es el estado del sistema dinámico. 
 
     Returns:
-       multiplicación de matrices (matrix) : Retorna la multiplicación de la constante compleja por la operación de conmutación del primer argumento con el segundo argumento. 
+       matriz (matrix) : Retorna la multiplicación de la constante compleja por la operación de conmutación del primer argumento con el segundo argumento. 
 
     """
     return -1.0j * (np.dot(oper, state) - np.dot(state, oper))

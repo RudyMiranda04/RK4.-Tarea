@@ -18,10 +18,10 @@ donde h es el tiempo transcurrido, y f es la función que genera la dinámica de
 
 $$
 \begin{equation}
-  \textit{f(t,)} \textbf{y}) = -i[\textbf{O}, \textbf{y} (\textit{t})]
+  \textit{f(t,} \textbf{y}) = -i[\textbf{O}, \textbf{y} (\textit{t})]
 \end{equation}
 $$
 
-Note que esta función no depende explícitante de la variable temporal, por lo que a la hora de emplear el método RK4, se puede prescindir de esa parte, y emplear solo el operador lineal en su lugar.
+Note que esta función no depende explícitante de la variable temporal, por lo que a la hora de emplear el método RK4, se puede prescindir de esa parte, y emplear solo el operador lineal.
 
 

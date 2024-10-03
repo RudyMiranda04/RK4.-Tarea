@@ -6,12 +6,11 @@ def dyn_generator(oper, state):
         [[0.-j  0.+1.j] [0.-1j  0.-0.j]]
 
     Args:
-        oper: Primer argumento. Es el operador lineal. Puede ser un arreglo, un float o un int. 
-        state: Segundo argumento. Es el estado del sistema dinámico. Puede ser un arreglo, un float o un int.
+        oper (matrix): Primer argumento. Es el operador lineal. 
+        state (matrix): Segundo argumento. Es el estado del sistema dinámico. 
 
     Returns:
-       list : Retorna la multiplicación de la constante compleja por la operación de conmutación del primer argumento con el segundo argumento. Puede ser un arreglo o un float.
+       multiplicación de matrices (matrix) : Retorna la multiplicación de la constante compleja por la operación de conmutación del primer argumento con el segundo argumento. 
 
     """
-
     return -1.0j * (np.dot(oper, state) - np.dot(state, oper))

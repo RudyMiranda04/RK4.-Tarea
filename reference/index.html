@@ -478,10 +478,11 @@
       <tbody>
           <tr class="doc-section-item">
             <td>
+                  <code>matrix</code>
             </td>
             <td>
               <div class="doc-md-description">
-                <p>matriz (matrix) : Retorna la multiplicación de la constante compleja por la operación de conmutación del primer argumento con el segundo argumento.</p>
+                <p>Retorna la multiplicación de la constante compleja por la operación de conmutación del primer argumento con el segundo argumento.</p>
               </div>
             </td>
           </tr>
@@ -517,7 +518,7 @@
 <span class="sd">        state (matrix): Segundo argumento. Es el estado del sistema dinámico. </span>
 
 <span class="sd">    Returns:</span>
-<span class="sd">       matriz (matrix) : Retorna la multiplicación de la constante compleja por la operación de conmutación del primer argumento con el segundo argumento. </span>
+<span class="sd">       (matrix): Retorna la multiplicación de la constante compleja por la operación de conmutación del primer argumento con el segundo argumento. </span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="o">-</span><span class="mf">1.0</span><span class="n">j</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">oper</span><span class="p">,</span> <span class="n">state</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="n">oper</span><span class="p">))</span>

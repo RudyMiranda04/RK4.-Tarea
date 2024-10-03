@@ -274,9 +274,9 @@
 
 <h1 id="tutorials">Tutorials</h1>
 <p>La rutina de rk4 es bastante útil. Una de sus posibles aplicaciones, es observar la evolución temporal de un estado <span class="arithmatex">\(\textbf{y} (\textit{t})\)</span>. Esto se podría hacer empleando la función solo una vez; sin embargo, para mayor precisión, se puede dividir el tiempo transcurrido en muchos lapsos pequeños y homogéneos de tiempo. Luego, guardar cada estado obtenido en un arreglo y por último graficar para ver la forma en la que varía. Además, se puede graficar tomando como punto de partida un estado diferente, para compararlos y ver qué tanto afecta. Un ejemplo de cómo podría aplicarse esto es de la siguiente forma:</p>
-<pre><code class="language-python">import numpy as np  #se importa la biblioteca numpy ya que la vamos a ocupar para ciertos cálculos.
+<pre><code class="language-python">import numpy as np  #se importa la biblioteca numpy ya que se va a ocupar para ciertos cálculos.
 
-oOper = np.array([[0,1], [1,0]]) #se define el operador con el que vamos a trabajar.
+oOper = np.array([[0,1], [1,0]]) #se define el operador con el que se va a trabajar.
 yInit = np.array([[1,0], [0,0]]) #se define un estado inicial.
 
 def dyn_generator(oper, state):
@@ -291,22 +291,22 @@ def rk4(func, oper, state, h):
 
 times = np.linspace(0, 10, 100) #aquí se crea un arreglo homogéneo de 100 tiempos entre 0 y 10.
 
-h = times[1] - times[0] #calculamos el tiempo que pasa entre cada elemento del arreglo, esto se puede hacer con cualesquiera dos elementos seguidos, ya que la lista es homogenéa.
+h = times[1] - times[0] #se calcula el tiempo que pasa entre cada elemento del arreglo, esto se puede hacer con cualesquiera dos elementos seguidos, ya que la lista es homogénea.
 
 yCopy = yInit.copy() #se crea una copia del operador que representa el estado inicial.
 
-stateQuant00 = np.zeros(times.size) #guardamos un arreglo que solo contiene 0.0 y que tiene el tamaño del arreglo times que se definió anteriormete
+stateQuant00 = np.zeros(times.size) #se guarda un arreglo que solo contiene 0.0 y que tiene el tamaño del arreglo times que se definió anteriormete
 stateQuant11 = np.zeros(times.size) #se hace otro arreglo igual. Esto se hace para guardar dos entradas diferentes de la matriz del estado inicial, para luego compararlas.
 
 for tt in range(times.size):
     stateQuant00[tt] = yInit[0,0].real #se guarda la parte real de la entrada (0,0) de la matriz del estado inicial.
     stateQuant11[tt] = yInit[1,1].real #se guarda la parte real de la entrada (1,1) de la matriz del estado inicial. 
-    yN = rk4(dyn_generator, oOper, yInit, h) #se invoca la rutina rk4 actuando sobre el el estado inicial.
+    yN = rk4(dyn_generator, oOper, yInit, h) #se invoca la rutina rk4 actuando sobre el estado inicial.
     yInit = yN #ahora se pone el estado obtenido anteriormente como el estado inicial, para que en la siguiente iteración se evalúe con respecto a él.
 
 #Ahora, ya se tienen los valores del estado confome iba pasando el tiempo, con dos puntos iniciales diferentes. 
 
-import matplotlib.pyplot as plt #se importa la libreria matplotlib.pyplot para hacer las gráficas
+import matplotlib.pyplot as plt #se importa la libreria matplotlib.pyplot para hacer las gráficas.
 
 fig, ax = plt.subplots()
 ax.plot(times, stateQuant00)

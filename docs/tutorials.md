@@ -43,6 +43,6 @@ ax.plot(times, stateQuant11, label = 'entrada 11') #se hacen ambas gráficas, cu
 plt.savefig('graficaBuena.png')
 plt.show()
 ```
-
+La gráfica de los estados con respecto al tiempo se ve de la siguiente manera:
 ![gráfica](graficaBuena.png)
 

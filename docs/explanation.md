@@ -10,7 +10,7 @@ $$
     k_2 &= h f(t_n + \frac{h}{2}, y_n + \frac{k_1}{2})  \\
     k_3 &= h f(t_n + \frac{h}{2}, y_n + \frac{k_2}{2})  \\
     k_4 &= h f(t_n + h, y_n + k_3)  \\
-    y_{n+1} &= y_n + \frac{1}{6} (k_1 + 2k_2 + 2k_3 + k_4) \\,
+    y_{n+1} &= y_n + \frac{1}{6} (k_1 + 2k_2 + 2k_3 + k_4), \\
 \end{aligned}
 $$
 

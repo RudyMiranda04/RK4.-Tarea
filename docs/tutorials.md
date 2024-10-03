@@ -1,6 +1,6 @@
 # Tutorials
 
-La rutina de rk4 es bastante útil. Una de sus posibles aplicaciones, es observar la evolución temperal de un estado $\textbf{y} (\textit{t})$. Esto se podría hacer empleando la función solo una vez; sin embargo, par a mayor precisión, se puede dividir el tiempo transcurrido en muchos lapsos pequeños y homogéneos de tiempo. Luego, guardar cada estado obtenidoen un arreglo y por último graficar para ver la forma en la que iba variando. Además, se puede graficar tomando como punto de partida un estado diferente, para compararlos y ver qué tanto afecta. Un ejemplo de cómo podría aplicarse esto es de la siguiente forma:
+La rutina de rk4 es bastante útil. Una de sus posibles aplicaciones, es observar la evolución temporal de un estado $\textbf{y} (\textit{t})$. Esto se podría hacer empleando la función solo una vez; sin embargo, para mayor precisión, se puede dividir el tiempo transcurrido en muchos lapsos pequeños y homogéneos de tiempo. Luego, guardar cada estado obtenido en un arreglo y por último graficar para ver la forma en la que varía. Además, se puede graficar tomando como punto de partida un estado diferente, para compararlos y ver qué tanto afecta. Un ejemplo de cómo podría aplicarse esto es de la siguiente forma:
 
 ```python
 import numpy as np  #se importa la biblioteca numpy ya que la vamos a ocupar para ciertos cálculos.
@@ -38,9 +38,8 @@ for tt in range(times.size):
 import matplotlib.pyplot as plt #se importa la libreria matplotlib.pyplot para hacer las gráficas
 
 fig, ax = plt.subplots()
-ax.plot(times, stateQuant00, label = 'entrada 00')
-ax.plot(times, stateQuant11, label = 'entrada 11') #se hacen ambas gráficas, cuando el estado iniciaba en la entrada (0,0) de la matriz del estado inicial y cuando iniciaba en la entrada (1,1)
-plt.savefig('graficaBuena.png')
+ax.plot(times, stateQuant00)
+ax.plot(times, stateQuant11) #se hacen ambas gráficas, cuando el estado iniciaba en la entrada (0,0) de la matriz del estado inicial y cuando iniciaba en la entrada (1,1)
 plt.show()
 ```
 La gráfica de los estados con respecto al tiempo se ve de la siguiente manera:

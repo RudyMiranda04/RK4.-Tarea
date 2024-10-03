@@ -40,6 +40,6 @@ Este módulo resuleve estos sistemás dinámicos genéricos mediante el uso del 
 
 Esta página es la página de documentación del módulo.
 
-For full documentation visit [github.com](https://github.com/RudyMiranda04/RK4).
+For full documentation visit [github.com](https://github.com/RudyMiranda04/RK4-Tarea).
 
 

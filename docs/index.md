@@ -36,7 +36,7 @@ donde $\textbf{O}$ es otro operador lineal, es la constante compleja y es un ope
 
 El operador $\textbf{O}$ puede tener distintos significados físicos dependiendo del problema dinámico en cuestión. Puede representar un mapa algebraico, el generador dinámico de un sistema caótico, un Hamiltoniano, etc.
 
-Este módulo resuleve estos sistemás dinámicos genéricos mediante el uso del método númerico Runge-Kutta de orden 4 (RK4).
+Este módulo resuleve estos sistemas dinámicos genéricos mediante el uso del método numérico Runge-Kutta de orden 4 (RK4).
 
 Esta página es la página de documentación del módulo.
 

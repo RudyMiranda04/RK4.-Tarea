@@ -22,6 +22,6 @@ $$
 \end{equation}
 $$
 
-Note que esta función no depende explícitante de la variable temporal, por lo que a la hora de emplear el método RK4, se puede prescindir de esa parte, y emplear solo el operador lineal.
+Note que esta función no depende explícitamente de la variable temporal, por lo que a la hora de emplear el método RK4, se puede prescindir de esa parte, y emplear solo el operador lineal.
 
 
